@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+    
+body {
+font-family: Arial;
+}
+
+/*HEADER*/
+header {
+    background-color: green;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: block;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#portada ul{
+    list-style: none;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+} 
+
+/*HISTORIA*/
+
+#imgGrid img{
+    width: 350px;
+    height: 350px;
+    padding: 30px;
+}
+#pp{
+    width: 100%;
+}
+#parrafo{ 
+    display: block;
+    width: 100%;
+}
+
+/*FLOTA*/
+
+#imgGrid img{
+    width: 350px;
+    height: 350px;
+    padding: 30px;
+}
+
+/*TRABAJA CON NOSOTROS*/
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+label {
+    margin-right: 10px;
+}
+input,textarea {
+    width: 100%;
+}
+
+
+
+/*MAIN*/
+main {
+    padding: 20px;
+    overflow: hidden;
+    display: block;
+}
+
+#carouselExample{
+    width: 600px;
+    height: 500px;
+}
+
+
+font-face { 
+    font-family: "Nexa"; 
+    src: url("../Fonts/Nexa-ExtraLight.ttf"); 
+} 
+p { 
+    font-family: "Nexa", cursive; 
+}
+
+
+
+/*FOOTER*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    clear: both
+}
+.pie{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+h3{
+    display: block;
+    font-size: 1.24em;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.social{
+    color: white;
+    font-style: oblique;
+    text-align: left;
+    float: left;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    user agent stylesheet
+    div {
+        display: block;
+}
+.contact-info {
+    color: white;
+    font-style: oblique;
+    text-align: right;
+}
