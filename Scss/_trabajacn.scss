@@ -1,0 +1,13 @@
+  /*TRABAJA CON NOSOTROS*/
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    label {
+      margin-right: 10px;
+    }
+    input,
+    textarea {
+      width: 100%;
+    }
+  }
