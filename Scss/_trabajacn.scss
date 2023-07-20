@@ -1,6 +1,7 @@
   /*TRABAJA CON NOSOTROS*/
   .form-group {
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-bottom: 10px;
     label {
@@ -10,4 +11,15 @@
     textarea {
       width: 100%;
     }
+    button{
+      padding: 15px 30px;
+      border-radius: 10px;
+      border:none;
+      background: linear-gradient(to right,green,#1e8000)
+    }
+    button:hover{
+      background: linear-gradient(to right,green,#1e8000)
+      
+    }
   }
+  
