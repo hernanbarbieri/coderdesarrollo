@@ -6,8 +6,8 @@
   }
 
   #carouselExample {
-    width: 600px;
-    height: 500px;
+    width: 800px;
+    height: 600px;
   }
 
   @font-face {
@@ -17,4 +17,39 @@
 
   p {
     font-family: "Nexa", cursive;
+  }
+  h3 {
+    display: block;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    justify-content: center;
+    justify-items: center;
+    
+  }
+
+  .video-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .video-container h2 {
+    margin-bottom: 20px;
+  }
+
+  .mision {
+    color: black;
   }

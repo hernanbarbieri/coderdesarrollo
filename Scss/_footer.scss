@@ -1,5 +1,8 @@
 /*FOOTER*/
 footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   background-color: #333;
   color: $seg-color;
   padding: $base-padding;
@@ -7,8 +10,7 @@ footer {
   .pie {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    h3 {
+    h2 {
       display: block;
       font-size: 1.24em;
       margin-block-start: 2em;
@@ -22,16 +24,54 @@ footer {
       font-style: oblique;
       text-align: left;
       float: left;
-      padding: 0;
       margin: 0;
       box-sizing: border-box;
+      width: 33%;
+      font-weight: 800;
+      padding: 20px;
+    }  
+    .label {
+      display: inline-block;
+      gap: 40px;
+      color: white;
+    }  
+    .contact-info {
+    color: $seg-color;
+    font-style: oblique;
+    text-align: right;
+    width: 33%;
+    font-weight: 800;
+    padding: 20px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    }
+    
+    .copyright {
+      width: 100%;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      margin: auto;
+      padding-left: 10px;
+      font-weight: bold;
+    }
+    
+    .politica {
+      padding-right: 10px;
+      margin-bottom: 10px;
+    }
+    .politica a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .politica a:hover {
+      color: gray;
+    }
+    
     }
   }
-}
-
-.contact-info {
-  color: $seg-color;
-  font-style: oblique;
-  text-align: right;
-}
-
