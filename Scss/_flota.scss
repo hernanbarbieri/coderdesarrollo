@@ -1,9 +1,4 @@
 /*FLOTA*/
-#imgGrid img {
-  width: $tamaño-imagen;
-  height: $tamaño-imagen;
-  padding: $base-padding;
-}
 
 @keyframes movimiento {
   0% {
@@ -19,16 +14,42 @@
     height: 100%;
   }
 }
+
+.texto-flota {
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  text-align: center; 
+  justify-content: center;
+  max-width: 100%; 
+  padding: 30px;
+  font-size: 16px;
+  
+}
+
+
+
 #imgGrid img {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
   animation-name: movimiento;
   animation-iteration-count: 1;
   animation-duration: 6s;
   animation-timing-function: linear;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
 }
-.descripcion-flota {
-  text-align: justify; 
-  margin: 0 auto; 
-  max-width: 900px;
+
 }

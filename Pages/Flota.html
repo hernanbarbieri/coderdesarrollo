@@ -41,46 +41,43 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">Descubrenos</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="./Flota.html"
-                    >Flota</a
-                  >
+                  <a class="nav-link active" aria-current="page" href="#">Flota</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./Historia.html">Historia</a>
                 </li>
-
                 <li class="nav-item">
                   <a class="nav-link" href="./Servicios.html">Servicios</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./Trabaja con nosotros.html"
-                    >Trabaja con nosotros
-                  </a>
+                  <a class="nav-link" href="./Trabaja con nosotros.html">Trabaja con nosotros</a>
                 </li>
+              
               </ul>
+              <form class="d-flex" role="buscar">
+                <input
+                  class="form-control me-2"
+                  type="buscar"
+                  placeholder="buscar"
+                  aria-label="buscar"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Buscar
+                </button>
+              </form>
             </div>
           </div>
         </nav>
       </div>
     </header>
     <main>
+      <section>
       <div class="container text-center">
         <div class="row row-cols-3 flex-sm-{grow|shrink}-1" class="d-flex justify-content-around" id="imgGrid">
           <div class="col"><img src="../Img/Flota1.jpg" alt="Camiones" /></div>
@@ -94,11 +91,18 @@
           <div class="col"><img src="../Img/camiones 4.jpg" alt="Camiones" /></div>
         </div>
       </div>
-      <section>
-        <div class="descripcion-flota">
+    </section>
+    <section>
+        <div class="texto-flota">
           <div>
             <p>  
-              La flota vehicular es el conjunto de vehículos con los que cuenta una empresa. En el sector de la logística, la flota vehicular está constituida también por el conjunto de estos vehículos. Sin embargo, en el caso del sector logístico, se trata de uno de los elementos más importantes de la propia empresa, puesto que es el medio a través del cual lleva a cabo su trabajo. De este modo, contar con una flota vehicular adecuada a las necesidades de la empresa logística en particular se convierte en un elemento básico de su funcionamiento diario, y que determinará en gran medida el buen funcionamiento de la empresa, así como sus resultados de cara a la satisfacción del cliente.
+              La flota vehicular es el conjunto de vehículos con los que cuenta una empresa. En el sector de la logística,
+              la flota vehicular está constituida también por el conjunto de estos vehículos. Sin embargo, 
+              en el caso del sector logístico, se trata de uno de los elementos más importantes de la propia empresa, 
+              puesto que es el medio a través del cual lleva a cabo su trabajo. 
+              De este modo, contar con una flota vehicular adecuada a las necesidades de la empresa logística en particular 
+              se convierte en un elemento básico de su funcionamiento diario, y que determinará en gran medida 
+              el buen funcionamiento de la empresa, así como sus resultados de cara a la satisfacción del cliente.
             </p>
           </div>
           </div>   

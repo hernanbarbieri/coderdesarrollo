@@ -3,15 +3,16 @@
     width: $tamaño-imagen;
     height: $tamaño-imagen;
     padding: $base-padding;
+    margin-top: 20px;
+    margin-bottom: 60px;
   }
-  #pp {
-    width: 100%;
-  }
-
+ 
+  
   .parrafo {
     text-align: justify; 
     margin: 0 auto; 
     max-width: 900px; 
+    margin-top: 60px;
   }
   
   

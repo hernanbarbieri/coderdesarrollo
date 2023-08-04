@@ -5,16 +5,21 @@ header {
   padding: $base-padding;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   display: block;
+  text-align: left;
+  margin-top: 20px;
 
   h1 {
     font-size: $font-size;
     font-weight: 600;
     text-align: center;
+    margin: 0;
   }
 
   #portada ul {
+    width: 200px;
+    height: 200px;
     list-style: none;
     display: block;
     list-style-type: disc;
@@ -23,5 +28,8 @@ header {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
   }
 }

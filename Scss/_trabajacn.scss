@@ -1,6 +1,10 @@
   /*TRABAJA CON NOSOTROS*/
   .tcn {
-    background-color: #1e8000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #00cc66, #00ff99);
   }
   .contacto {
     display: flex;
@@ -14,27 +18,50 @@
     margin-bottom: 90px;
     align-items: center;
     flex-direction: column;
-    margin-top: 25px;
+    margin-top: 90px;
     margin-left: 30px;
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    div{
+        margin-bottom: 10px;
+    }
+
     label {
       margin-right: 90px;
       width: 90px;
+      font-weight: bold;
     }
     input {
       width: 100%;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
     }
     textarea {
       width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
     }
   }
   .button{
-    color: black;
+    display: block;
     height: 100px;
     width: 100px;
     padding: 15px 30px;
-    border-radius: 10px;
+    border-radius: 5px;
     border:none;
-    background: linear-gradient(to right,green,#1e8000);
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     transition: width 2s;
     font-family: sans-serif;
     font-size: 16px;
