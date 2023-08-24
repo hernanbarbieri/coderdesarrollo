@@ -3,6 +3,7 @@
     width: $tamaño-imagen;
     height: $tamaño-imagen;
     padding: $base-padding;
+    display: flex;
     margin-top: 20px;
     margin-bottom: 60px;
   }
@@ -10,8 +11,7 @@
   
   .parrafo {
     text-align: justify; 
-    margin: 0 auto; 
-    max-width: 900px; 
+    max-width: 100%; 
     margin-top: 60px;
   }
   
