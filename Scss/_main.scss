@@ -1,61 +1,65 @@
-  /*MAIN*/
-  main {
-    padding: $base-padding;
-    overflow: hidden;
-    display: block;
-    background: linear-gradient(to bottom right, #00cc66, #00ff99);
-  }
+/*MAIN*/
 
-  #carouselExample {
-    width: 800px;
-    height: 600px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-  }
+main {
+  padding: $base-padding;
+  overflow: hidden;
+  display: block;
+  background: linear-gradient(to bottom right, #00cc66, #00ff99);
+}
 
-  @font-face {
-    font-family: "Nexa";
-    src: url("../Fonts/Nexa-ExtraLight.ttf");
-  }
+#carouselExample {
+  width: 800px;
+  height: 600px;
+  margin-top: 20px;
+}
 
-  p {
-    font-family: "Nexa", cursive;
-  }
-  h3 {
-    display: block;
-    margin-block-start: 2em;
-    margin-block-end: 2em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    color: black;
-    text-align: center;
-    font-size: 32px;
-    letter-spacing: 1px;
-    justify-content: center;
-    justify-items: center;
-    margin-top: 10px;
-    
-  }
+.mision {
+  color: black;
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 900px;
+  margin-bottom: 10px;
+}
 
-  .video-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    justify-content: center;
-    justify-items: center;
-    width: 100%;
-    padding: 0%;
-    margin: 0%;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
+@font-face {
+  font-family: "Nexa";
+  src: url("../Fonts/Nexa-ExtraLight.ttf");
+}
 
-  .video-container h2 {
-    margin-bottom: 20px;
-  }
+p {
+  font-family: "Nexa", cursive;
+}
 
-  .video-container iframe {
+h3 {
+  display: block;
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 1px;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 2px;
+}
+
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+  font-size: 24px;
+  margin-bottom: 20px;
+
+
+  iframe {
     width: 100%;
     max-width: 560px;
     height: 315px;
@@ -63,13 +67,39 @@
     border: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  
+}
+/* Estilos para mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+main {
+  padding: $base-padding;
+  overflow: hidden;
+}
 
-  .mision {
-    color: black;
-    text-align: justify; 
-    margin: 0 auto; 
-    max-width: 900px;
-    margin-top: 5px;
-    margin-bottom: 30px;
-  }
+#carouselExample {
+  width: 100%; 
+  height: auto; 
+  margin-top: 10px;
+}
+
+.mision {
+  max-width: 100%; 
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 24px; 
+  text-align: center;
+}
+
+.video-container {
+  font-size: 16px; 
+  margin-bottom: 10px;
+}
+
+iframe {
+  max-width: 100%; 
+  height: auto; 
+  margin-bottom: 10px;
+}
+}

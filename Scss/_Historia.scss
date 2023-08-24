@@ -15,4 +15,15 @@
     margin-top: 60px;
   }
   
-  
+/* Estilos para mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+  #imgGrid img {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .parrafo {
+    margin: 10px;
+    font-size: 14px;
+  }
+}

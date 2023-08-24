@@ -1,6 +1,6 @@
-/*FOOTER*/
+/*Footer*/
 footer {
-  height: 20%;
+  height: 410px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -8,10 +8,13 @@ footer {
   color: $seg-color;
   padding: $base-padding;
   clear: both;
+  font-family: $font-family;
+
   .pie {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     h2 {
       display: block;
       font-size: 1.24em;
@@ -21,34 +24,55 @@ footer {
       margin-inline-end: 0px;
       font-weight: bold;
     }
+
     .social {
+      display: block;
       color: $seg-color;
-      font-style: oblique;
+      font-style: block;
       text-align: left;
       float: left;
       margin: 0;
-      list-style: none;
       box-sizing: border-box;
       width: 33%;
       font-weight: 800;
       padding: 20px;
-    }  
-    .label {
-      display: inline-block;
-      gap: 40px;
-      color: white;
-    }  
-    .contact-info {
-    color: $seg-color;
-    font-style: oblique;
-    text-align: right;
-    width: 33%;
-    font-weight: 800;
-    padding: 20px;
-    margin-bottom: 10px;
-    flex-direction: column;
+
+      ul {
+        list-style: none; 
+      }
+
+      ul li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: white;
+
+        img {
+          max-width: 45px;
+          height: auto;
+          margin-right: 10px;
+          color: white;
+        }
+
+        label {
+          flex-grow: 1;
+          text-align: left;
+          color: white;
+          font-family: $font-family;
+        }
+      }
     }
-    
+    .contact-info {
+      color: $seg-color;
+      font-style: oblique;
+      text-align: right;
+      width: 33%;
+      font-weight: 800;
+      padding: 20px;
+      margin-bottom: 10px;
+      flex-direction: column;
+    }
     .copyright {
       width: 100%;
       background-color: black;
@@ -62,22 +86,55 @@ footer {
       text-align: center;
       margin-top: 20px;
       font-size: 12px;
-    }
-    
-    .politica {
-      padding-right: 10px;
-      margin-bottom: 10px;
-    }
-    .politica a {
-      text-decoration: none;
-      color: white;
-      transition: color 0.3s ease-in-out;
-      cursor: pointer;
-    }
 
-    .politica a:hover {
-      color: gray;
-    }
-    
+      .politica {
+        padding-right: 10px;
+        margin-bottom: 10px;
+
+        a {
+          text-decoration: none;
+          color: white;
+          transition: color 0.3s ease-in-out;
+          cursor: pointer;
+
+          &:hover {
+            color: gray;
+          }
+        }
+      }
     }
   }
+}
+
+/* Estilos para mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+  footer {
+    height: auto; 
+    flex-direction: column;
+    text-align: center;
+    padding: $base-padding; 
+  }
+
+  .pie {
+    flex-direction: column; 
+  }
+
+  .social,
+  .contact-info {
+    width: 100%; 
+  }
+
+  .social {
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
+
+  .contact-info {
+    text-align: center; 
+  }
+
+  .copyright {
+    text-align: center; 
+    font-size: 14px;
+  }
+}
